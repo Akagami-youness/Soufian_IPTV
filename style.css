@@ -18,13 +18,9 @@ body {
     margin-bottom: 30px;
   }  
   .jumbotron {
-    
     color: #fff;
-    
     font-family: Montserrat, sans-serif;
     height: 85vh;
-    
-    background-color: green;
   }
   .test{
     height: 85vh;
