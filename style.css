@@ -1,45 +1,58 @@
 body {
     font: 400 15px Lato, sans-serif;
-    line-height: 1.8;
-    color: #818181;
+    line-height: 2;
   }
   h2 {
     font-size: 24px;
     text-transform: uppercase;
-    color: #303030;
     font-weight: 600;
     margin-bottom: 30px;
   }
   h4 {
     font-size: 19px;
     line-height: 1.375em;
-    color: #303030;
     font-weight: 400;
     margin-bottom: 30px;
   }  
+  .wstp-img{
+    width: 10vw;
+    height: 20vh;
+  }
   .jumbotron {
     color: #fff;
     font-family: Montserrat, sans-serif;
     height: 85vh;
   }
-  .test{
+  .background{
     height: 85vh;
     width: 100vw;
     max-width:100%;
   }
+  h2,h4{
+    color: #fff;
+  }
   .container-fluid {
     padding: 60px 50px;
+    background-color: #013251;
+    color: #000;
+  }
+  #about p{
+    font-size: 20px;
+    text-align: center;
+  }
+  #about{
+    background-image: linear-gradient(#013251, #ccd6dc);
+  }
+  .channle_img{
+    width: 40vw;
+    height: 60vh;
   }
   .bg-grey {
-    background-color: #f6f6f6;
+    background-color: #013251;
   }
   .logo-small {
     color: #f4511e;
     font-size: 50px;
-  }
-  .logo {
-    color: #f4511e;
-    font-size: 200px;
   }
   .thumbnail {
     padding: 0 0 15px 0;
@@ -50,16 +63,6 @@ body {
     width: 100%;
     height: 100%;
     margin-bottom: 10px;
-  }
-  .carousel-control.right, .carousel-control.left {
-    background-image: none;
-    color: #f4511e;
-  }
-  .carousel-indicators li {
-    border-color: #f4511e;
-  }
-  .carousel-indicators li.active {
-    background-color: #f4511e;
   }
   .item h4 {
     font-size: 19px;
@@ -72,30 +75,42 @@ body {
     font-style: normal;
   }
   .panel {
-    border: 1px solid #f4511e; 
-    border-radius:0 !important;
+    border: 1px solid #335a73; 
+    border-radius: 15px !important;
     transition: box-shadow 0.5s;
   }
   .panel:hover {
     box-shadow: 5px 0px 40px rgba(0,0,0, .2);
   }
   .panel-footer .btn:hover {
-    border: 1px solid #f4511e;
+    border: 1px solid #335a73;
     background-color: #fff !important;
-    color: #f4511e;
+    color: #335a73;
+  }
+  .price{
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .check-img{
+    width: 2vw;
+    height: 4vh;
   }
   .panel-heading {
     color: #fff !important;
-    background-color: #f4511e !important;
-    padding: 25px;
+    background-color: #1a4662 !important;
+    padding: 10px;
     border-bottom: 1px solid transparent;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
+    border-radius: 15px !important;
+  }
+  .panel-body{
+    font-size: 20px;
+    text-align: left;
+    line-height: 1.2;
   }
   .panel-footer {
-    background-color: white !important;
+    /* background-color: white !important; */
+    background-image: linear-gradient(#013251, #ccd6dc);
+
   }
   .panel-footer h3 {
     font-size: 32px;
@@ -106,25 +121,37 @@ body {
   }
   .panel-footer .btn {
     margin: 15px 0;
-    background-color: #f4511e;
+    background-color: #1a4662;
     color: #fff;
   }
   .navbar {
     margin-bottom: 0;
-    background-color: #f4511e;
+    background-color: #013251;
     z-index: 9999;
     border: 0;
     font-size: 12px !important;
-    line-height: 1.42857143 !important;
+    /* line-height: 3 !important; */
+    min-height: 11.1vh;
+    height: 11.1vh;
     letter-spacing: 4px;
+    font-weight: 600;
     border-radius: 0;
     font-family: Montserrat, sans-serif;
   }
+  .container{
+    line-height: 3 !important;
+  }
+  .logo{
+    width: 90px;
+    height: 73px;
+    border-radius: 10px;
+  }
   .navbar li a, .navbar .navbar-brand {
     color: #fff !important;
+    line-height: 3.5 !important;
   }
   .navbar-nav li a:hover, .navbar-nav li.active a {
-    color: #f4511e !important;
+    color: #2d2597 !important;
     background-color: #fff !important;
   }
   .navbar-default .navbar-toggle {
@@ -140,8 +167,8 @@ body {
   .slide {
     animation-name: slide;
     -webkit-animation-name: slide;
-    animation-duration: 1s;
-    -webkit-animation-duration: 1s;
+    animation-duration: 1.5s;
+    -webkit-animation-duration: 1.5s;
     visibility: visible;
   }
   @keyframes slide {
@@ -173,9 +200,190 @@ body {
       width: 100%;
       margin-bottom: 35px;
     }
+    
   }
   @media screen and (max-width: 480px) {
     .logo {
       font-size: 150px;
     }
+    .background{
+      width: 100vw;
+      height: 40vh;
+    }
+    .navbar{
+      line-height: 2;
+    }
   }
+
+
+
+
+  @import url("https://fonts.googleapis.com/css?family=Muli:400,700&display=swap");
+
+.carasoul{
+  width: 20vw;
+  height: 65vh;
+}
+
+.container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.items {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  animation: carouselAnim 50s infinite alternate linear;
+}
+
+.entry {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  width: 22vw;
+  height: 70vh;
+  background: #ccd6dc;
+  margin: 1em;
+  padding: 1em;
+  border-radius: 10px;
+  box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.5);
+}
+#contact{
+  background-image: url("./8.jpg");
+}
+@media only screen and (max-width: 768px) {
+  .items {
+    animation: carouselAnim 10s infinite alternate linear;
+  }
+  
+  @keyframes carouselAnim {
+    from {
+      transform: translate(0, 0);
+    }
+    to {
+      transform: translate(calc(-100% + (2 * 300px)));
+    }
+  }
+  .carasoul{
+    width: 80%;
+    height: 35vh;
+  }
+  .entry {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    background: #ccd6dc;
+    margin: 1em;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.5);
+  }
+  .items {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    animation: carouselAnim 50s infinite alternate linear;
+  }
+}
+
+.entry p {
+  text-align: center;
+  padding: 1em;
+  color: black;
+}
+
+.name {
+  font-weight: bold;
+  color: black;
+}
+
+@keyframes carouselAnim {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(calc(-100% + (5 * 300px)));
+  }
+}
+
+.container .faders {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+}
+
+.faders .right,
+.faders .left {
+  background: linear-gradient(
+    to right,
+    rgba(245, 245, 245, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  width: 15%;
+  height: 100%;
+  position: absolute;
+  z-index: 200;
+}
+
+.right {
+  right: 0;
+  background: linear-gradient(
+    to left,
+    rgba(245, 245, 245, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+
+@property --num {
+  syntax: "<integer>";
+  initial-value: 1;
+  inherits: false;
+}
+.VOD-counter {
+  animation: counter 5s infinite alternate ease-in-out;
+  counter-set: num var(--num);
+  font: 500 25px system-ui;
+  padding: 2rem;
+}
+.VOD-counter::after {
+  content: counter(num);
+} 
+@keyframes counter {
+  from {
+    --num: 1;
+ }
+  to {
+    --num: 14000;
+ }
+}
+
+
+@property --m {
+  syntax: "<integer>";
+  initial-value: 1;
+  inherits: false;
+}
+.Channels-counter {
+  animation: counter 5s infinite alternate ease-in-out;
+  counter-set: numbr var(--num);
+  font: 500 25px system-ui;
+  padding: 2rem;
+}
+.Channels-counter::after {
+  content: counter(num);
+} 
+@keyframes counter {
+  from {
+    --num: 1;
+ }
+  to {
+    --num: 40000;
+ }
+}
