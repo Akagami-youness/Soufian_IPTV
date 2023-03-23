@@ -95,7 +95,7 @@ body {
     width: 2vw;
     height: 4vh;
   }
-  i{
+ .promo{
     font-weight: 400;
     font-size: 18px;
     text-decoration: line-through;
