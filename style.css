@@ -1,6 +1,6 @@
 body {
     font: 400 15px Lato, sans-serif;
-    line-height: 2;
+    /* line-height: 2; */
   }
   h2 {
     font-size: 24px;
@@ -226,8 +226,8 @@ body {
   @import url("https://fonts.googleapis.com/css?family=Muli:400,700&display=swap");
 
 .carasoul{
-  width: 20vw;
-  height: 65vh;
+  width: 18vw;
+  height: 57vh;
 }
 
 .container {
@@ -248,8 +248,8 @@ body {
   align-items: center;
   flex-direction: column;
   position: relative;
-  width: 22vw;
-  height: 70vh;
+  width: 20vw;
+  height: 62vh;
   background: #ccd6dc;
   margin: 1em;
   padding: 1em;
@@ -257,7 +257,10 @@ body {
   box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.5);
 }
 #contact{
-  background-image: url("./8.jpg");
+  /* background-image: url("./attachments/21.jpg"); */
+  color: #fff;
+  width: 100%;
+  background-color: #f4511e;
 }
 @media only screen and (max-width: 768px) {
   .items {
@@ -392,3 +395,4 @@ body {
     --num: 40000;
  }
 }
+
