@@ -44,7 +44,7 @@ body {
     background-image: linear-gradient(#013251, #ccd6dc);
   }
   .channle_img{
-    width: 40vw;
+    width: 30vw;
     height: 60vh;
   }
   .bg-grey {
@@ -135,21 +135,27 @@ body {
     z-index: 9999;
     border: 0;
     font-size: 12px !important;
-    /* line-height: 3 !important; */
-    min-height: 11.1vh;
-    height: 11.1vh;
+    line-height: 3 !important;
+    min-height: 10vh;
+    height: 10vh;
     letter-spacing: 4px;
     font-weight: 600;
     border-radius: 0;
-    font-family: Montserrat, sans-serif;
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
   }
-  .container{
-    line-height: 3 !important;
-  }
+
   .logo{
     width: 90px;
-    height: 73px;
+    height: 72px;
     border-radius: 10px;
+    margin-left: 2vw;
+  }
+  .navbar-brand{
+    margin-top: 1vh;
+    margin-left: 20vw;
+    /* background-color: red; */
+    padding-top: 0px;
+    font-size: 18px;
   }
   .navbar li a, .navbar .navbar-brand {
     color: #fff !important;
@@ -221,8 +227,7 @@ body {
   }
 
 
-
-
+/* carasoul for the series */
   @import url("https://fonts.googleapis.com/css?family=Muli:400,700&display=swap");
 
 .carasoul{
@@ -257,10 +262,10 @@ body {
   box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.5);
 }
 #contact{
-  /* background-image: url("./attachments/21.jpg"); */
   color: #fff;
-  width: 100%;
-  background-color: #f4511e;
+  /* width: 100%; */
+  /* background-color: #f4511e; */
+  background-image: url("./attachments/21.jpg");
 }
 @media only screen and (max-width: 768px) {
   .items {
@@ -380,7 +385,7 @@ body {
 }
 .Channels-counter {
   animation: counter 5s infinite alternate ease-in-out;
-  counter-set: numbr var(--num);
+  counter-set: num var(--num);
   font: 500 25px system-ui;
   padding: 2rem;
 }
